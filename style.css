@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--clr-primary-400: hsl(179, 52%, 43%);
+	--clr-primary-350: hsl(179, 62%, 43%);
+	--clr-primary-300: hsl(71, 73%, 54%);
+
+	--clr-neutral-100: hsl(204, 43%, 93%);
+	--clr-neutral-200: hsl(218, 22%, 67%);
+}
+
+html,
+body {
+	height: 100%;
+	font-family: 'Karla', sans-serif;
+}
+
+li {
+	list-style: none;
+	color: var(--clr-neutral-100);
+}
+
+.font-weight-400 {
+	font-weight: 400;
+}
+
+.heading-font {
+	font-size: 2rem;
+}
+
+.heading-padding {
+	padding-bottom: 0.5rem;
+}
+
+.font-weight-700 {
+	font-weight: 700;
+}
+
+div {
+	padding: 2rem;
+	line-height: 1.5;
+}
+
+.container {
+	padding: 0;
+	box-shadow: 2px -1px 20px 3px #808080;
+	border-radius: 1rem;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	display: grid;
+}
+
+.join h2 {
+	color: var(--clr-primary-400);
+}
+
+.reason {
+	background: var(--clr-primary-350);
+}
+
+.subscription {
+	background: var(--clr-primary-400);
+	font-weight: 400;
+}
+
+.subscription,
+.reason {
+	color: white;
+}
+
+span {
+	font-size: 3.5rem;
+	font-weight: 700;
+}
+
+#time {
+	font-size: 1rem;
+	font-weight: 400;
+	color: var(--clr-neutral-100);
+}
+
+.join h3 {
+	color: var(--clr-primary-300);
+	padding: 0.5rem 0 0 0;
+}
+
+.join p {
+	color: var(--clr-neutral-200);
+	padding: 0.5rem 0 0 0;
+	font-weight: 400;
+}
+
+.subscription button {
+	padding: 1rem 8rem;
+	border: none;
+	border-radius: 0.5rem;
+	color: white;
+	background: var(--clr-primary-300);
+	font-size: 1.2rem;
+	margin-top: 1rem;
+	box-shadow: 0px 9px 50px -24px #000000;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+	.container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.grid-col-span-2 {
+		grid-column: span 2;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		margin: 10rem;
+		border: 2px solid red;
+		height: 100%;
+	}
+}
